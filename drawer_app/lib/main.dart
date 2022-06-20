@@ -1,22 +1,35 @@
+import 'dart:async';
+
+import 'package:drawer_app/pages.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:drawer_app/drawer.dart';
+import 'package:flutter/rendering.dart';
 
 void main(List<String> args) {
   runApp(MaterialApp(
     title: "myApp",
-    home: mydrawer(),
+    home: splashscreen(),
   ));
 }
 
-class mydrawer extends StatefulWidget {
+class splashscreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _mydrawerstate();
+    return _splashscreenstate();
   }
 }
 
-class _mydrawerstate extends State {
+class _splashscreenstate extends State {
+  @override
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 3), (() {
+      Navigator.of(context)
+          .pushReplacement(MaterialPageRoute(builder: (context) => homepage()));
+    }));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,15 +39,12 @@ class _mydrawerstate extends State {
           style: TextStyle(fontSize: 25),
         ),
       ),
-      drawer:
-          maindrawer(), //drawer is a property or attribute of scaffold in which we are calling the maindrawer cls which exist in drawer.dart
       body: Center(
-        child: Text(
-          "Home page",
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          textDirection: TextDirection.ltr,
-        ),
-      ),
+          child: Container(
+              margin: EdgeInsets.only(bottom: 30),
+              width: 250,
+              height: 300,
+              child: Center(child: Image.asset("assets/IKperfect.png")))),
     );
   }
 }

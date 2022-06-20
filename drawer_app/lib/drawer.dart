@@ -25,7 +25,7 @@ class maindrawer extends StatelessWidget {
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                            image: AssetImage("assets/profile.jpg")))),
+                            image: AssetImage("assets/Profile.png")))),
                 Container(
                     padding: EdgeInsets.only(top: 8),
                     child: Center(

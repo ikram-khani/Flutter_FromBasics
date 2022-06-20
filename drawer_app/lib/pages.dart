@@ -1,25 +1,32 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:drawer_app/drawer.dart';
 
-class homepage extends StatelessWidget {
+class homepage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _homepagestate();
+  }
+}
+
+class _homepagestate extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Home",
+          "My App",
           style: TextStyle(fontSize: 25),
         ),
       ),
-      body: Container(
-        child: Center(
+      drawer:
+          maindrawer(), //drawer is a property or attribute of scaffold in which we are calling the maindrawer cls which exist in drawer.dart
+      body: Center(
           child: Text(
-            "HOme page Data",
-            style: TextStyle(fontSize: 30),
-            textDirection: TextDirection.ltr,
-          ),
-        ),
-      ),
+        "Home Page Data",
+        style: TextStyle(fontSize: 30),
+        textDirection: TextDirection.ltr,
+      )),
     );
   }
 }
