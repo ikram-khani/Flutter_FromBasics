@@ -1,0 +1,15 @@
+Stack of routes means stack of pages managed actually by Navigator
+
+Navigator.push:  used for adding routes to the stack(consist of routes) managed by navigator and go to that route cz in stack at the top of stack push and pop occurs
+
+context: it shows the location of the widget in the  widgets tree
+
+Navigator.pop: used to remove the current route from the stack and then the top of stack will be at another route 
+
+Navigator.of(context).pop: it's also used to remove the top route from the stack (context mean current widget context)
+
+Navigator.of(context).pushReplacement: replace the current(top) route of the stack by pushing another given route thus after navigating to the given route the previous route will be disposed
+
+super.initstate: call the initstate method of the parent class from which it is inherited
+
+initstate: it will be called exactly once for each state object it creates (when the statefulWidget is inserted in the widget tree) this method is called once it is the first initial state before build method of the state

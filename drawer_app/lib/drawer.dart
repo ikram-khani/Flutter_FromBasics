@@ -19,16 +19,15 @@ class maindrawer extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                    margin: EdgeInsets.only(top: 10),
-                    width: 85,
-                    height: 100,
+                    margin: EdgeInsets.only(top: 25),
+                    width: 70,
+                    height: 90,
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                            image: NetworkImage(
-                                "https://scontent.fisb5-2.fna.fbcdn.net/v/t39.30808-6/277579042_1401793500280299_7801562304501824797_n.jpg?stp=cp0_dst-jpg_e15_q65_s320x320&_nc_cat=104&ccb=1-7&_nc_sid=85a577&_nc_ohc=VjKi0-W_7K8AX9EGbAf&_nc_ht=scontent.fisb5-2.fna&oh=00_AT9zWs0aDndYfdLkC5C08epeERex0Evm3-VYyiTLzOhnIQ&oe=62B2D2C2")))),
+                            image: AssetImage("assets/profile.jpg")))),
                 Container(
-                    padding: EdgeInsets.only(top: 10),
+                    padding: EdgeInsets.only(top: 8),
                     child: Center(
                       child: Text(
                         "Ikram khan",
