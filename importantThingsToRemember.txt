@@ -13,3 +13,21 @@ Navigator.of(context).pushReplacement: replace the current(top) route of the sta
 super.initstate: call the initstate method of the parent class from which it is inherited
 
 initstate: it will be called exactly once for each state object it creates (when the statefulWidget is inserted in the widget tree) this method is called once it is the first initial state before build method of the state
+
+buildcontext: reference to the location of a widget in the widget tree
+
+theme.of(buildContext).primaryColor : get the imformation of the theme at this point(widget) and return the data saved in the 'primaryColor' variable in the build-in 'Theme' class
+
+future: It’s a guarantee that a value will exist,but it isn’t quite ready.
+
+Future.then takes a callback, which will be executed when the future value
+resolves. In the burger restaurant, the callback is what you decide to do with the
+burger when you get it (such as eat it). ex when future is done what code you want to execute
+
+ASYNC AWAIT:
+Future<Burger> orderBurgerFromServer() async {
+return await prepareBurger();  //prepareBurger takes time  (for the burger to cook). 
+When it’s done, return it.
+
+}
+
