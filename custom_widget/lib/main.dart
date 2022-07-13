@@ -17,6 +17,8 @@ class MyForm extends StatefulWidget {
 }
 
 class _MyFormState extends State<MyForm> {
+  final formkey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,6 +60,7 @@ class _MyFormState extends State<MyForm> {
           ),
         )
       ])),
+      floatingActionButton: FloatingActionButton(onPressed: (() {})),
     );
   }
 }

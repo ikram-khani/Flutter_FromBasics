@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
+  CustomTextField(
+      {this.boolobscureText = false,
+      this.hint = "",
+      this.isnumber = false,
+      this.label = "",
+      this.pwd = false});
   final String label;
   final String hint;
   final bool boolobscureText;
   bool pwd;
   bool isnumber;
-  CustomTextField({
-    this.label = "",
-    this.hint = "",
-    this.boolobscureText = false,
-    this.pwd = false,
-    this.isnumber = false,
-  });
-  //true or false
 
   @override
   Widget build(BuildContext context) {
