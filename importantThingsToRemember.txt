@@ -35,3 +35,5 @@ When it’s done, return it.
 
 ****Scaffold widget properties:: appBar , body, floatingActionButtion
 ****AppBar widget properties:: leading , title , actions,
+
+****Callback is basically a function or a method that we pass as an argument into another function or a method to perform an action. In the simplest words, we can say that Callback or VoidCallback are used while sending data from one method to another and vice-versa
