@@ -23,8 +23,15 @@ class TeamList extends StatelessWidget {
               controller: _scrollController,
               itemCount: 100,
               itemBuilder: ((context, index) {
-                return ListTile(
-                  title: Text("Item: ${index + 1}"),
+                return Card(
+                  margin: const EdgeInsets.all(5),
+                  borderOnForeground: true,
+                  shadowColor: Colors.black,
+                  color: Colors.greenAccent,
+                  elevation: 10,
+                  child: ListTile(
+                    title: Text("Item: ${index + 1}"),
+                  ),
                 );
               }))),
     );
