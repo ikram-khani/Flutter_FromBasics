@@ -37,3 +37,11 @@ When it’s done, return it.
 ****AppBar widget properties:: leading , title , actions,
 
 ****Callback is basically a function or a method that we pass as an argument into another function or a method to perform an action. In the simplest words, we can say that Callback or VoidCallback are used while sending data from one method to another and vice-versa
+
+****A typedef can be used to specify a function signature that we want specific functions to match. A function signature is defined by a function’s parameters (including their types). The return type is not a part of the function signature. Its syntax is as follows.
+
+typedef function_name(parameters)
+
+****A variable of typedef can point to any function having the same signature as typedef. You can use the following signature to assign a function to a typedef variable.
+
+type_def  var_name = function_name
