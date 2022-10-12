@@ -45,3 +45,7 @@ typedef function_name(parameters)
 ****A variable of typedef can point to any function having the same signature as typedef. You can use the following signature to assign a function to a typedef variable.
 
 type_def  var_name = function_name
+
+
+***// DefaultTextStyle.merge() allows you to create a default text
+// style that is inherited by its child and all subsequent children.
